@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    width: 100vw;
+}
+#titlediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin: 0;
+    background-color: #1F461A;
+    color: #FFEA8A;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    width: 100%;
+    height: 100%;
+    margin: auto 0 auto 0;
+}
+.content_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #FFEA8A;
+}
+.content_button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border: 3px solid #1F461A;
+}
+.content_button p{
+    color: #1F461A;
+    font-size: 80px;
+}
+#ppcontent{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+#topicons{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    padding: 20px 0 0 20px;
+}
+#topicons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin: 0 20px 0 0;
+}
+.ppcontentdivs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #1F461A;
+    width: 100%;
+    height: 20%;
+}
+#totalvendas{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#totalvendas label{
+    color: #1F461A;
+    font-size: 35px;
+}
+#totalvendas p{
+    color: #1F461A;
+    font-size: 32px;
+}
+#maisvendido{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#maisvendido label{
+    color: #1F461A;
+    font-size: 32px;
+}
+#maisvendido p{
+    color: #1F461A;
+    font-size: 32px;
+}
