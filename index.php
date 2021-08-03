@@ -10,26 +10,46 @@
         <title>Pane di Serra</title>
     </head>
     <body>
-        <div class="wrapper">
-            <header>
-                <div id="titlediv">
-                    <h1>Olá, Bem Vindo(a) ao Pane di Serra</h1>
+    <!-- Conexão ao DB -->
+    <?php include './database/connection.php' ?>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="logo">
+                <div class="img">
+                    <img src="./assets/pao.png" alt="Pane di Serra">
                 </div>
-            </header>
-            <div id="content">
-                <div class="content_button" id="option1">
-                    <a href="pagpaes.php">
-                        <p>Pães</p>
-                    </a>
-                </div>
-                <div class="content_button" id="option2">
-                    <a href="#">
-                        <p>Casa</p>
-                    </a>
+                <div class="nome">
+                    <p>Pane di Serra</p>
                 </div>
             </div>
-            
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a class="nav-link " href="#!">Início</a>
+                </li>
+                <li class="list-inline-item dropdown">
+                    <a class="nav-link dropbtn" href="#!">Pães</a>
+                    <div class="dropdown-content">
+                        <a href="#">Visualizar Vendas</a>
+                        <a href="#">Visualizar Receitas</a>
+                        <a href="#">Visualizar Clientes</a>
+                    </div>
+                </li>
+                <li class="list-inline-item dropdown">
+                    <a class="nav-link dropbtn" href="#!">Casa</a>
+                    <div class="dropdown-content">
+                        <a href="#">Relatório Despesas</a>
+                        <a href="#">Relatório Receitas</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="tabelaVendas" class="conteudo">
+            <table></table>
         </div>
-        <script type="module" src="./scripts/receitas.js"></script>
+
+    </div>
     </body>
+
+    <script type="module" src="./scripts/scripts.js"></script>
 </html>

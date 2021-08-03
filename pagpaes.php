@@ -23,7 +23,7 @@
                     <button type="button" class="btn btn-success">Cadastrar Pão</button>
                     <button type="button" class="btn btn-info">Editar Pão</button>
                 </div>
-                <div id="vendas">
+                <div class="ppcontentdivs" id="vendas">
                     <div id="totalvendas">
                         <label for="">Total de Vendas no Mês: <b>mes</b></label>
                         <b><p>20</p></b>
@@ -33,9 +33,10 @@
                         <b><p>Australiano</p></b>
                     </div>
                 </div>
-                <div id="conversao">
+                <div class="ppcontentdivs" id="conversao">
                     <div id="selecionarpao">
-                        <select name="" id="selectpao">
+                        <label for="selectpao">Selecione o Tipo do Pão:</label>
+                        <select name="selectpao" id="selectpao">
                             <option value="">Pão</option>
                         </select>
                     </div>
@@ -54,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="receita">
+                <div class="ppcontentdivs" id="receita">
 
                 </div>
             </div>

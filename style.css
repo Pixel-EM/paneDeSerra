@@ -1,12 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 *{
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 .wrapper{
     display: flex;
+    align-items: center;
     flex-flow: column;
     height: 100vh;
     width: 100vw;
 }
+
+.nav{
+    display: flex;
+    width: 80%;
+    height: 5rem;
+
+
+    border-bottom: 2px solid orange;
+}
+.list-inline{ 
+    margin-left: auto; 
+    margin: 0 0 0 auto
+}
+.list-inline-item{
+    height: 100%;
+    min-width: 120px;
+}
+.nav-link{
+    height: 100%;
+    color: rgb(138, 55, 0);
+    transition: 300ms ease;
+
+    margin: auto 0 auto 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 0;
+}
+.nav-link:hover{
+    background-color: orange;
+    color: white;
+}
+.logo{ 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+
+
+}
+.nome p{ 
+    font-size: 2rem;
+    margin: auto; 
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+
+    color: rgb(138, 55, 0);
+}
+.img { 
+    margin-right: 1rem;
+    height: 60px;
+    width: 60px; 
+}
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: orange;}
+
+/* Tabela */
+.conteudo{
+    display: flex;
+
+    padding: 2rem 0 2rem 0;
+}
+
+th{
+    border: 1px solid orange;
+    min-width: 200px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+th:nth-child(2){ min-width: 500px; }
+th:nth-child(3){ min-width: 100px; }
+th:last-child, th:nth-child(4){
+    min-width: 150px;
+}
+
+
+
+
+
+
+
+/* 
+Parte que o biel fez
+
+*/
+
 #titlediv{
     display: flex;
     justify-content: center;
@@ -27,27 +155,7 @@
     height: 100%;
     margin: auto 0 auto 0;
 }
-.content_button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: #FFEA8A;
-}
-.content_button a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    border: 3px solid #1F461A;
-}
-.content_button p{
-    color: #1F461A;
-    font-size: 80px;
-}
+
 #ppcontent{
     display: flex;
     flex-flow: column;
@@ -108,4 +216,28 @@
 #maisvendido p{
     color: #1F461A;
     font-size: 32px;
+}
+#selecionarpao{
+    display: flex;
+    flex-flow: column;
+    width: 20%;
+}
+#valoresconversao{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.vcdiv{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 0 0;
+    width: 100%;
+}
+.vcdiv label{
+    font-size: 30px;
+}
+.vcdiv p{
+    font-size: 25px;
 }
