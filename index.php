@@ -29,7 +29,7 @@
                 </div>
             </div>
             
-            <script type="module" src="./scripts/receitas.js"></script>
         </div>
+        <script type="module" src="./scripts/receitas.js"></script>
     </body>
 </html>
