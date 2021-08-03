@@ -60,15 +60,26 @@
             </table>
             <div class="controle">
                 <button id="addVenda" class="btn btn-primary">Adicionar Venda</button>
-                <form action="" id="addVendaForm">
+                <form action="database/process.php" id="addVendaForm" method="POST">
                     <label for="">Tipo de pão</label>
-                    <input type="text" placeholder="Tipo de pão">
+                    <select name="tipopao" id="tipopao">
+                        <option value="australiano">Australiano</option>
+                        <option value="light">Light</option>
+                        <option value="fibralight">Fibra Light</option>
+                        <option value="uvaPassaCanela">Uva Passa</option>
+                        <option value="integral">Integral</option>
+                        <option value="aveia">Aveia</option>
+                        <option value="banana">Banana</option>
+                        <option value="linhaca">Linhaça</option>
+                        <option value="maca">Maçã</option>
+                        <option value="ortomolecular">Ortomolecular</option>
+                    </select>
                     <label for="">Cliente</label>
-                    <input type="text" placeholder="Insira o nome do cliente">
+                    <input name="nomecliente" type="text" placeholder="Insira o nome do cliente">
                     <label for="">Preço de Venda</label>
-                    <input type="text" placeholder="Insira o valor">
+                    <input name="precovenda" type="text" placeholder="Insira o valor">
 
-                    <input type="button" value="Adicionar" class="btn btn-warning">
+                    <input type="submit" value="Adicionar" class="btn btn-warning">
                 </form>
             </div>
 
