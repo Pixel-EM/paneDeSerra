@@ -34,6 +34,7 @@
     width: 100%;
     height: 100%;
     background-color: #FFEA8A;
+    cursor: pointer;
 }
 .content_button a{
     display: flex;
@@ -108,4 +109,28 @@
 #maisvendido p{
     color: #1F461A;
     font-size: 32px;
+}
+#selecionarpao{
+    display: flex;
+    flex-flow: column;
+    width: 20%;
+}
+#valoresconversao{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.vcdiv{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 0 0;
+    width: 100%;
+}
+.vcdiv label{
+    font-size: 30px;
+}
+.vcdiv p{
+    font-size: 25px;
 }
