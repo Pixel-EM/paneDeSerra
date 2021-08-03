@@ -10,12 +10,4 @@ try {
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
 }
-
-$query = "SELECT * FROM paneserra";
-$data = $query->query($query);
-
-foreach($data as $row){
-    echo '<tr>'.$row["receita"].'</tr>'
-};
-
 ?>

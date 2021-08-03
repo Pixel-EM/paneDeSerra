@@ -11,7 +11,7 @@
     </head>
     <body>
     <!-- Conexão ao DB -->
-    <?php include './database/connection.php' ?>
+    <?php require_once('./database/read.php'); ?>
     <div class="wrapper">
         <nav class="nav">
             <div class="logo">
@@ -45,7 +45,20 @@
         </nav>
 
         <div id="tabelaVendas" class="conteudo">
-            <table></table>
+            <table>
+                <?php
+                    while($venda = $stmt->fetch()){
+                        echo '<tr>
+                                <td>'.$venda["receita"].'</td>
+                                <td>'.$venda["cliente"].'</td>
+                                <td>'.$venda["data"].'</td>                    
+                                <td>R$ '.$venda["precoCusto"].'</td>
+                                <td>R$ '.$venda["precoVenda"].'.00</td>
+                              </tr>';
+                    }
+                ?>
+            </table>
+
         </div>
 
     </div>

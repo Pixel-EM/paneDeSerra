@@ -112,7 +112,7 @@
     padding: 2rem 0 2rem 0;
 }
 
-th{
+th, td{
     border: 1px solid orange;
     min-width: 200px;
     text-align: center;
@@ -123,7 +123,9 @@ th:nth-child(3){ min-width: 100px; }
 th:last-child, th:nth-child(4){
     min-width: 150px;
 }
-
+tr > td:first-child{
+    text-transform: capitalize;
+}
 
 
 

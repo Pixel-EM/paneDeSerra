@@ -18,3 +18,4 @@ window.onload = () => {
       let data = heads;
       generateTableHead(table, data);
 }
+
