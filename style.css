@@ -113,14 +113,16 @@ th, td{
     text-align: center;
     font-family: 'Quicksand', sans-serif;
 }
-th:nth-child(2){ min-width: 500px; }
-th:nth-child(3){ min-width: 100px; }
-th:last-child, th:nth-child(4){
-    min-width: 150px;
+
+th:first-child, td:first-child{ min-width: 50px; }
+th:nth-child(3){ min-width: 300px; }
+th:nth-child(4), td:nth-child(4){ min-width: 100px; }
+tr > td:nth-child(2){ text-transform: capitalize; }
+td:last-child{
+    min-width: 70px;
+
 }
-tr > td:first-child{
-    text-transform: capitalize;
-}
+
 .conteudo{
     display: flex;
     flex-flow: column;
@@ -131,125 +133,37 @@ tr > td:first-child{
     display: flex;
     flex-flow: column;
 
-    width: 20%;
+    width: 230px;
 
-    margin-top: 2rem;
+    margin: 2rem 0 2rem 0;
 }
+.btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+
 #addVendaForm{
     display: none;
     flex-flow: column;
 }
 
+#addVendaForm input, #tipopao{
+    margin: .3rem 0 .3rem 0;
+}
+#tipopao{
+    height: 30px;
+    width: 170px;
+}
+#tipoQnt{
+    display: block;
+}
+#qnt{ width: 55px}
 
-
-/* 
-Parte que o biel fez
-
-*/
-
-#titlediv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-    margin: 0;
-    background-color: #1F461A;
-    color: #FFEA8A;
+.remVenda{
+    background-color: transparent;
+    border: none;
+    transition: 200ms ease;
 }
-#content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row;
-    width: 100%;
-    height: 100%;
-    margin: auto 0 auto 0;
-}
-
-#ppcontent{
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    height: 100%;
-}
-#topicons{
-    display: flex;
-    width: 100%;
-    height: 10%;
-    padding: 20px 0 0 20px;
-}
-#topicons button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    margin: 0 20px 0 0;
-}
-.ppcontentdivs{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid #1F461A;
-    width: 100%;
-    height: 20%;
-}
-#totalvendas{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-#totalvendas label{
-    color: #1F461A;
-    font-size: 35px;
-}
-#totalvendas p{
-    color: #1F461A;
-    font-size: 32px;
-}
-#maisvendido{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-#maisvendido label{
-    color: #1F461A;
-    font-size: 32px;
-}
-#maisvendido p{
-    color: #1F461A;
-    font-size: 32px;
-}
-#selecionarpao{
-    display: flex;
-    flex-flow: column;
-    width: 20%;
-}
-#valoresconversao{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-.vcdiv{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 20px 0 0;
-    width: 100%;
-}
-.vcdiv label{
-    font-size: 30px;
-}
-.vcdiv p{
-    font-size: 25px;
+.remVenda:hover{
+    color: orange;
 }

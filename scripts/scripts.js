@@ -1,7 +1,7 @@
 import receitas from './receitas.js'
 
 window.onload = () => {
-    let heads = ['RECEITA','CLIENTE','DATA','PREÇO DE CUSTO','PREÇO DE VENDA']
+    let heads = ['ID','RECEITA','CLIENTE','DATA','PREÇO DE CUSTO','PREÇO DE VENDA']
 
     function generateTableHead(table, data) {
         let thead = table.createTHead();
@@ -21,8 +21,8 @@ window.onload = () => {
 
 let addVenda = document.querySelector('#addVenda')
 let form = document.querySelector('#addVendaForm')
-addVenda.addEventListener('click', ()=> {
 
-  form.style.display == 'none' ? form.style.display = 'flex' : form.style.display = 'none'
-  
+// Mostra o input pra adicionar venda
+addVenda.addEventListener('click', ()=> {
+  form.style.display == "none" || form.style.display == ""  ? form.style.display = 'flex' : form.style.display = 'none'
 })
