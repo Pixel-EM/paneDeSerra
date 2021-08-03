@@ -58,6 +58,19 @@
                     }
                 ?>
             </table>
+            <div class="controle">
+                <button id="addVenda" class="btn btn-primary">Adicionar Venda</button>
+                <form action="" id="addVendaForm">
+                    <label for="">Tipo de pão</label>
+                    <input type="text" placeholder="Tipo de pão">
+                    <label for="">Cliente</label>
+                    <input type="text" placeholder="Insira o nome do cliente">
+                    <label for="">Preço de Venda</label>
+                    <input type="text" placeholder="Insira o valor">
+
+                    <input type="button" value="Adicionar" class="btn btn-warning">
+                </form>
+            </div>
 
         </div>
 

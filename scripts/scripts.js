@@ -19,3 +19,10 @@ window.onload = () => {
       generateTableHead(table, data);
 }
 
+let addVenda = document.querySelector('#addVenda')
+let form = document.querySelector('#addVendaForm')
+addVenda.addEventListener('click', ()=> {
+
+  form.style.display == 'none' ? form.style.display = 'flex' : form.style.display = 'none'
+  
+})

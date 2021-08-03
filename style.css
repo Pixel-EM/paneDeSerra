@@ -106,11 +106,6 @@
 .dropdown:hover .dropbtn {background-color: orange;}
 
 /* Tabela */
-.conteudo{
-    display: flex;
-
-    padding: 2rem 0 2rem 0;
-}
 
 th, td{
     border: 1px solid orange;
@@ -126,9 +121,24 @@ th:last-child, th:nth-child(4){
 tr > td:first-child{
     text-transform: capitalize;
 }
+.conteudo{
+    display: flex;
+    flex-flow: column;
 
+    padding: 2rem 0 2rem 0;
+}
+.controle{
+    display: flex;
+    flex-flow: column;
 
+    width: 20%;
 
+    margin-top: 2rem;
+}
+#addVendaForm{
+    display: none;
+    flex-flow: column;
+}
 
 
 
