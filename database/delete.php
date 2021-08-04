@@ -2,18 +2,21 @@
 
 include_once("connection.php");
 
-$id = $_POST['remVenda'];
+$idVen = $_POST['remVenda'];
+$idDes = $_POST['remDes'];
 
-try {
-    $query = "DELETE FROM `vendas` WHERE `vendas`.`id`={$id}";
+
+    $query = "DELETE FROM `vendas` WHERE `vendas`.`id`={$idVen}";
     $stmt = $conn->prepare($query);
-
     $stmt->execute();
-  } catch(PDOException $e) {
-    echo "Query failed: " . $e->getMessage();
-  }
+
+    $queryDes = "DELETE FROM `despesas` WHERE `despesas`.`id`={$idDes}";
+    $desp = $conn->prepare($queryDes);
+    $desp->execute();
 
 
-header("Location: http://localhost/paneDeSerra");
+
+
+header("Location: http://localhost/paneDeSerra/despesas.php");
 die()
 ?>

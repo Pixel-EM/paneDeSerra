@@ -30,10 +30,11 @@ function array_push_assoc($array, $key, $value){
     return $array;
  };
 
-// Adiciona o index(nome do produto) e o valor por grama(ppg) na array $produtos 
+// Adiciona o index(nome do produto) e o valor por grama(ppg) na array $produtos
 foreach($produtosJSON as $produto => $nome) {
   $produtos = array_push_assoc($produtos, $nome['nome'], $nome['ppg']);
-  array_push($ingredientes, $nome['nome']);
+    // Adiciona os nomes dos ingredientes numa array pra sempre seguir a mesma ordem na iteração do cálculo de custo final
+    array_push($ingredientes, $nome['nome']);
 };
 
 // Adiciona o index(nome da receita) e os ingredientes necessarios

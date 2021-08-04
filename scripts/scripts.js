@@ -1,7 +1,12 @@
-window.onload = () => {
-    let heads = ['ID','RECEITA','CLIENTE','DATA','PREÇO DE CUSTO','PREÇO DE VENDA']
+
+    let heads = ['ID','RECEITA','CLIENTE','DATA','PREÇO DE CUSTO','PREÇO DE VENDA'];
+    let headsDes = ['ID', 'CREDOR', 'VENCIMENTO', 'VALOR'];
+    
+    let tableVen = document.querySelector('#tableVen');
+    let tableDes = document.querySelector('#tableDes');
 
     function generateTableHead(table, data) {
+      if(table == null) return;
         let thead = table.createTHead();
         let row = thead.insertRow();
         for (let key of data) {
@@ -12,10 +17,9 @@ window.onload = () => {
         }
       }
       
-      let table = document.querySelector('table');
-      let data = heads;
-      generateTableHead(table, data);
-}
+
+      generateTableHead(tableVen, heads);
+      generateTableHead(tableDes, headsDes);
 
 let addVenda = document.querySelector('#addVenda')
 let form = document.querySelector('#addVendaForm')

@@ -141,7 +141,9 @@ td:last-child{
     outline: none;
     box-shadow: none;
 }
-
+table{
+    margin-bottom: 2rem;
+}
 #addVendaForm{
     display: none;
     flex-flow: column;
@@ -167,3 +169,9 @@ td:last-child{
 .remVenda:hover{
     color: orange;
 }
+
+/* PÁGINA DESPESA */
+/* PÁGINA DESPESA */
+/* PÁGINA DESPESA */
+/* PÁGINA DESPESA */
+
