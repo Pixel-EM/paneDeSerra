@@ -1,0 +1,160 @@
+[
+    {
+        "nome": "farinhaTrigo",
+        "peso": 1,
+        "pt": 4,
+        "ppg": 0.004
+    },
+    {
+        "nome": "farinhaCenteio",
+        "peso": 1,
+        "pt": 12.08,
+        "ppg": 0.012
+    },
+    {
+        "nome": "farinhaIntegral" ,
+        "peso": 1,
+        "pt": 5.50,
+        "ppg": 0.0055
+    },
+    {
+        "nome": "farinhaAmendoas",
+        "peso": 1,
+        "pt": 60,
+        "ppg": 0.06
+    },
+    {
+        "nome": "farinhaAveia",
+        "peso": 1,
+        "pt": 12.50,
+        "ppg": 0.0125
+    },
+    {
+        "nome": "farinhaLinhaca",
+        "peso": 1,
+        "pt": 15,
+        "ppg": 0.015
+    },
+    {
+        "nome": "fibra" ,
+        "peso": 1,
+        "pt": 7.50,
+        "ppg": 0.0075
+    },
+    {
+        "nome": "sal",
+        "peso": 1,
+        "pt": 1.50,
+        "ppg": 0.0015
+    },
+    {
+        "nome": "melhorador",
+        "peso": 0.300,
+        "pt": 9,
+        "ppg": 0.03
+    },
+    {
+        "nome": "acucarMascavo",
+        "peso": 1,
+        "pt": 18,
+        "ppg": 0.018
+    },
+    {
+        "nome": "propionato",
+        "peso": 0.010,
+        "pt": 2.50,
+        "ppg": 0.25
+    },
+    {
+        "nome":"margarina",
+        "peso": 0.500,
+        "pt": 7.50,
+        "ppg": 0.015
+    },
+    {
+        "nome": "cacau",
+        "peso": 0.200,
+        "pt": 15,
+        "ppg": 0.075
+    },
+    {
+        "nome": "mel",
+        "peso": 0.300,
+        "pt": 18.90,
+        "ppg": 0.063
+    },
+    {
+        "nome": "fermento",
+        "peso": 0.125,
+        "pt": 5.50,
+        "ppg": 0.044
+    },
+    {
+        "nome": "acucar",
+        "peso": 1,
+        "pt": 3.2,
+        "ppg": 0.0032
+    },
+    {
+        "nome": "dinatec",
+        "peso": 0.100,
+        "pt": 6.80,
+        "ppg": 0.068
+    },
+    {
+        "nome": "germeTrigo",
+        "peso": 1,
+        "pt": 15.50,
+        "ppg": 0.0155
+    },
+    
+    {
+        "nome": "canela",
+        "peso": 1,
+        "pt": 45,
+        "ppg": 0.045
+    },
+    {
+        "nome": "leitePo",
+        "peso": 1,
+        "pt": 8,
+        "ppg": 0.008
+    },
+    {
+        "nome": "uvaPassa",
+        "peso": 1,
+        "pt": 26.40,
+        "ppg": 0.0264
+    },
+    {
+        "nome": "aveia",
+        "peso": 1,
+        "pt": 9.90,
+        "ppg": 0.009
+    },
+    
+    {
+        "nome": "banana",
+        "peso": 1,
+        "pt": 3.50,
+        "ppg": 0.0035
+    },
+    {
+        "nome": "maca",
+        "peso": 1,
+        "pt": 8,
+        "ppg": 0.008
+    },
+    {
+        "nome": "soja",
+        "peso": 0.500,
+        "pt": 6.20,
+        "ppg": 0.0062
+    },
+    {
+        "nome": "linhaca",
+        "peso": 1,
+        "pt": 12,
+        "ppg": 0.012
+    }
+]

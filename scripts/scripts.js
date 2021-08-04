@@ -1,5 +1,3 @@
-import receitas from './receitas.js'
-
 window.onload = () => {
     let heads = ['ID','RECEITA','CLIENTE','DATA','PREÇO DE CUSTO','PREÇO DE VENDA']
 
