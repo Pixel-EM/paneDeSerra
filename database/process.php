@@ -96,8 +96,7 @@ $data = date("d/m/Y");
 // Coleta o preço final de venda colocado
 $precoVenda = (filter_input(INPUT_POST, 'precovenda', FILTER_SANITIZE_STRING) * $qnt);
 // Calcula o valor de custo multiplicando o valor final(baseado na receita) e multiplicando pela quantidade
-$precoCusto = ($receitasValor[$tipoPao]) * $qnt;
-
+$precoCusto = floatval(($receitasValor[$tipoPao]) * $qnt);
 
 $query = "INSERT INTO vendas(receita, cliente, data, precoVenda, precoCusto) VALUES ('$tipoPao','$nomeCliente','$data','$precoVenda','$precoCusto')";
 $stmt = $conn->prepare($query);
@@ -105,5 +104,5 @@ $stmt->execute();
 
 
 // Redirecionar o usuário pra página inicial depois de executar a query
-header('Location: http://localhost/paneDeSerra');
+header('Location: http://localhost/paneDeSerra/');
 die();

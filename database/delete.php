@@ -8,6 +8,6 @@ $idVen = $_POST['remVenda'];
     $stmt = $conn->prepare($query);
     $stmt->execute();
 
-header("Location: http://localhost/paneDeSerra/index.php");
+header("Location: http://localhost/paneDeSerra/");
 die()
 ?>
