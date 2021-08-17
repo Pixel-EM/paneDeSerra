@@ -46,20 +46,27 @@
         <div class="conteudo">
             <div class="controle">
                 <button id="addDespesa" class="btn btn-primary">Adicionar Despesa</button>
+                <form action="database/processdesp.php" id="addDespesaForm" method="post">
+                    <label for="tipodespesa">Despesa:</label>
+                    <input type="text" name="tipodespesa" class="form-control" >
+                    <label for="datavenc">Data de Vencimento:</label>
+                    <input type="date" name="datavenc" id="dataVenc" class="form-control">
+                    <label for="valordesp">Valor da Despesa:</label>
+                    <input type="text" name="valordesp" class="" placeholder="R$">
+                    <input type="submit" name="submit" class="btn btn-warning" value="Confirmar">
+                </form>
             </div>
-        
-        
         
             <table id="tableDes">
                 <?php
                     while($contas = $despesas->fetch()){
-                    echo '<tr>
-                          <td>'.$contas["id"].'</td>
-                          <td>'.$contas["credor"].'</td>
+                    echo '<tr> '.
+                          //<td>'.$contas["id"].'</td>
+                          '<td>'.$contas["tipodespesa"].'</td>
                           <td>'.$contas["vencimento"].'</td>
-                          <td>'.$contas["valor"].'</td>                    
+                          <td>R$ '.number_format($contas["valor"], 2, ',', '.').'</td>                    
                           <td>
-                          <form action="./database/delete.php">
+                          <form action="./database/deleteDespesas.php">
                           <button class="remVenda" name="remDes" formmethod="post" type="submit" value='.$contas["id"].'>Excluir</button>
                           </form>
                           </td>

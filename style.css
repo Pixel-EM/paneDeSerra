@@ -114,7 +114,7 @@ th, td{
     font-family: 'Quicksand', sans-serif;
 }
 
-th:first-child, td:first-child{ min-width: 50px; }
+th:first-child, td:first-child{ min-width: 200px; }
 th:nth-child(3){ min-width: 300px; }
 th:nth-child(4), td:nth-child(4){ min-width: 100px; }
 tr > td:nth-child(2){ text-transform: capitalize; }
@@ -150,14 +150,14 @@ table{
 }
 
 #addVendaForm input, #tipopao{
-    margin: .3rem 0 .3rem 0;
+    margin: .3rem 3px .3rem 0;
 }
 #tipopao{
-    height: 30px;
+    height: 40px;
     width: 170px;
 }
 #tipoQnt{
-    display: block;
+    display: flex;
 }
 #qnt{ width: 55px}
 
@@ -175,3 +175,10 @@ table{
 /* PÁGINA DESPESA */
 /* PÁGINA DESPESA */
 
+#addDespesaForm{
+    display: none;
+}
+#addDespesaForm input{
+    margin: 5px 0;
+    width: 200px;
+}

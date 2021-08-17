@@ -46,7 +46,7 @@
                 <button id="addVenda" class="btn btn-primary">Adicionar Venda</button>
                 <form action="database/process.php" id="addVendaForm" method="POST">
                 <div id="tipoQnt">
-                    <select name="tipopao" id="tipopao">
+                    <select name="tipopao" class="form-select" id="tipopao">
                         <option value="australiano">Australiano</option>
                         <option value="light">Light</option>
                         <option value="fibraLight">Fibra Light</option>
@@ -59,11 +59,11 @@
                         <option value="ortomolecular">Ortomolecular</option>
                     </select>
                     
-                    <input type="number" id="qnt" name="qnt" min="1" max="500" value="1">
+                    <input type="number" class="form-control" id="qnt" name="qnt" min="1" max="500" value="1">
                 </div>
                 
-                <input name="nomecliente" type="text" placeholder="Insira o nome do cliente" required>
-                <input name="precovenda" type="text" placeholder="Insira o valor" required>
+                <input name="nomecliente" class="form-control" type="text" placeholder="Insira o nome do cliente" required>
+                <input name="precovenda" class="form-control" type="text" placeholder="Insira o preço unitário" required>
                 
                 <input type="submit" value="Adicionar" class="btn btn-warning">
             </form>
@@ -73,9 +73,9 @@
             <table id="tableVen">
                 <?php
                     while($venda = $stmt->fetch()){
-                        echo '<tr>
-                        <td>'.$venda["id"].'</td>
-                        <td>'.$venda["receita"].'</td>
+                        echo '<tr>'.
+                        //<td>'.$venda["id"].'</td>
+                        '<td>'.$venda["receita"].'</td>
                         <td>'.$venda["cliente"].'</td>
                         <td>'.$venda["data"].'</td>                    
                         <td>R$ '.$venda["precoCusto"].'</td>
